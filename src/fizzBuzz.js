@@ -3,25 +3,28 @@ function FizzBuzz() {
 
 }
 
-FizzBuzz.prototype.print = function(number) {
+FizzBuzz.prototype = {
 
-  if ( this._divisibleBy(number, 15) ) {
-    return 'FizzBuzz';
-  } else if ( this._divisibleBy(number, 3) ) {
-      return 'Fizz';
-  } else if ( this._divisibleBy(number, 5) ) {
-      return 'Buzz';
-  } else {
-      return number;
-  };
-};
+  print: function(number) {
 
-FizzBuzz.prototype._divisibleBy = function(number, divisor) {
-  return number % divisor === 0
-};
+    if ( this._divisibleBy(number, 15) ) {
+      return 'FizzBuzz';
+    } else if ( this._divisibleBy(number, 3) ) {
+        return 'Fizz';
+    } else if ( this._divisibleBy(number, 5) ) {
+        return 'Buzz';
+    } else {
+        return number;
+    };
+  },
 
-FizzBuzz.prototype.go = function () {
-  for ( var i = 1; i <= 100; i += 1 ) {
-    console.log(this.print(i));
-  };
+  _divisibleBy: function(number, divisor) {
+    return number % divisor === 0
+  },
+
+  go: function () {
+    for ( var i = 1; i <= 100; i += 1 ) {
+      console.log(this.print(i));
+    };
+  }
 };
