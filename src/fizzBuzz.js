@@ -27,3 +27,7 @@ FizzBuzz.prototype._divisibleByFive = function(number) {
 FizzBuzz.prototype._divisibleByThree = function(number) {
     return number % 3 === 0
 };
+
+FizzBuzz.prototype.go = function () {
+  return true;
+};

@@ -37,5 +37,15 @@ describe("FizzBuzz", function() {
 
   });
 
+  describe("#go", function() {
+
+    it("is defined", function() {
+        expect(fb.go).toBeDefined();
+    });
+
+
+
+  });
+
 
 });
