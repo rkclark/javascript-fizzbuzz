@@ -29,6 +29,12 @@ describe("FizzBuzz", function() {
 
     });
 
+    it("Returns buzz when divisible by 5", function() {
+      var fb = new FizzBuzz();
+      expect(fb.print(5)).toEqual("Buzz");
+
+    });
+
   });
 
 
