@@ -25,6 +25,7 @@ describe("FizzBuzz", function() {
     it("Returns fizz when divisible by 3", function(){
       var fb = new FizzBuzz();
       expect(fb.print(3)).toEqual("Fizz");
+      expect(fb.print(6)).toEqual("Fizz");
 
     });
 
