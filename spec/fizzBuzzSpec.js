@@ -19,6 +19,7 @@ describe("FizzBuzz", function() {
     it("Returns a number when not divisible by 3 or 5", function() {
       var fb = new FizzBuzz();
       expect(fb.print(4)).toEqual(4);
+      expect(fb.print(2)).toEqual(2);
     });
 
   });
