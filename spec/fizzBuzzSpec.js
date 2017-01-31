@@ -32,6 +32,7 @@ describe("FizzBuzz", function() {
 
     it("Returns fizzbuzz when divisible by 3 and 5", function(){
       expect(fb.print(15)).toEqual("FizzBuzz");
+      expect(fb.print(30)).toEqual("FizzBuzz");
     });
 
   });
